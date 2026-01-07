@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Work: El silencio de la hierba</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="wrap header__inner">
+      <a class="brand" href="../index.html#works">
+        <span class="brand__name">Aoki Gushiken</span>
+        <span class="brand__role">Works</span>
+      </a>
+      <nav class="nav">
+        <a href="../index.html">Home</a>
+        <a href="../index.html#works">Works</a>
+      </nav>
+      <button class="menu" type="button" aria-label="Abrir menú" aria-expanded="false">Menu</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" style="padding-bottom:18px">
+      <div class="wrap">
+        <p class="kicker">WORK</p>
+        <h1 class="title" style="margin-bottom:10px">Rattoons Studios:<br/> El silencio de la hierba</h1>
+        <p class="lead">Music composed for a animated film, currently in post production.</p>
+
+        <div class="workcard__links" style="margin-top:18px">
+          <a class="pill" href="https://www.instagram.com/p/DD0L1cOyEH_/" target="_blank" rel="noopener">Work in progress -> Check the Trailer</a>
+          <!-- <a class="textlink" href="./">← Volver a Works</a> -->
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+    <div class="wrap">
+    <figure class="banner2">
+      <img src="../assets/works/work-3.png" alt="Banner visual" />
+      <figcaption>Rattoons Studios / Ongoing</figcaption>
+    </figure>
+    </div>
+    </section>
+
+    <section class="section" style="border-top:none; padding-top:18px">
+      <div class="wrap">
+        <div style="margin-top:18px; max-width:70ch">
+          <h2 style="margin:0 0 8px; font-size:22px">Credits</h2>
+          <ul class="list">
+            <li>Role: Music Composer</li>
+            <li>Client: Rattoons Studios</li>
+            <li>Year: Ongoing</li>
+            <li>Links: <a target="_blank" href="https://www.instagram.com/p/DD0L1cOyEH_/" class="textlink">Trailer</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <p class="small muted">© <span id="y"></span> Aoki Gushiken</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+    const btn = document.querySelector(".menu");
+    const nav = document.querySelector(".nav");
+    btn.addEventListener("click", () => {
+      const open = nav.classList.toggle("nav--open");
+      btn.setAttribute("aria-expanded", String(open));
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Works — Tu Nombre</title>
+  <meta name="description" content="Trabajos y proyectos de Tu Nombre." />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="wrap header__inner">
+      <a class="brand" href="../index.html#top">
+        <span class="brand__name">TU NOMBRE</span>
+        <span class="brand__role">works</span>
+      </a>
+
+      <nav class="nav" aria-label="Navegación">
+        <a href="../index.html#listen">Listen</a>
+        <a href="../index.html#albums">Albums</a>
+        <a href="../index.html#events">Live events</a>
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#contact">Contact</a>
+        <a href="./">Works</a>
+      </nav>
+
+      <button class="menu" type="button" aria-label="Abrir menú" aria-expanded="false">Menu</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" style="padding-bottom:18px">
+      <div class="wrap">
+        <p class="kicker">SELECTED</p>
+        <h1 class="title" style="margin-bottom:10px">Works</h1>
+        <p class="lead">Proyectos, commissions, música para imagen, colaboraciones y piezas seleccionadas.</p>
+      </div>
+    </section>
+
+    <section class="section" style="border-top:none; padding-top:18px">
+      <div class="wrap">
+
+        <!-- PROJECT CARD -->
+        <article class="workcard">
+          <div class="workcard__meta">
+            <h2 class="workcard__title">Proyecto 1 — Nombre</h2>
+            <p class="muted workcard__desc">
+              2–4 líneas: qué hiciste, para quién, contexto (film / stage / brand / game),
+              y el resultado.
+            </p>
+
+            <ul class="chips">
+              <li>Score</li>
+              <li>Sound design</li>
+              <li>2026</li>
+            </ul>
+
+            <div class="workcard__links">
+              <a class="pill" href="https://example.com" target="_blank" rel="noopener">Ver proyecto</a>
+              <a class="textlink" href="project-1.html">Detalles →</a>
+              <a class="textlink" href="https://youtube.com" target="_blank" rel="noopener">Video</a>
+            </div>
+          </div>
+
+          <div class="workcard__gallery">
+            <img src="../assets/works/p1-1.jpg" alt="Proyecto 1 imagen 1" loading="lazy">
+            <img src="../assets/works/p1-2.jpg" alt="Proyecto 1 imagen 2" loading="lazy">
+            <img src="../assets/works/p1-3.jpg" alt="Proyecto 1 imagen 3" loading="lazy">
+          </div>
+        </article>
+
+        <!-- PROJECT CARD -->
+        <article class="workcard">
+          <div class="workcard__meta">
+            <h2 class="workcard__title">Proyecto 2 — Nombre</h2>
+            <p class="muted workcard__desc">
+              Descripción breve. Puedes incluir menciones (festival, marca, teatro, etc.).
+            </p>
+
+            <ul class="chips">
+              <li>Live</li>
+              <li>Composer</li>
+              <li>2025</li>
+            </ul>
+
+            <div class="workcard__links">
+              <a class="pill" href="https://example.com" target="_blank" rel="noopener">Ver</a>
+              <a class="textlink" href="project-2.html">Detalles →</a>
+              <a class="textlink" href="https://soundcloud.com/tuusuario/tutrack" target="_blank" rel="noopener">SoundCloud</a>
+            </div>
+          </div>
+
+          <div class="workcard__gallery">
+            <img src="../assets/works/p2-1.jpg" alt="Proyecto 2 imagen 1" loading="lazy">
+            <img src="../assets/works/p2-2.jpg" alt="Proyecto 2 imagen 2" loading="lazy">
+          </div>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <p class="small muted">© <span id="y"></span> Tu Nombre</p>
+      <div class="links">
+        <a href="../index.html">Home</a>
+        <a href="./">Works</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+    const btn = document.querySelector(".menu");
+    const nav = document.querySelector(".nav");
+    btn.addEventListener("click", () => {
+      const open = nav.classList.toggle("nav--open");
+      btn.setAttribute("aria-expanded", String(open));
+    });
+  </script>
+</body>
+</html>
